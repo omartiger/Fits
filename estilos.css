@@ -53,7 +53,7 @@ header {
 }
 .logo-img {
     max-height: 100%; /* Ajusta el alto de la imagen al tamaño de la caja */ 
-    width: auto; /*Mantiene las proporciones originales para que no se deforme */ 
+    max-width: auto; /*Mantiene las proporciones originales para que no se deforme */ 
     object-fit: contain;
 }
 
