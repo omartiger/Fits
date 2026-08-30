@@ -40,9 +40,8 @@ header {
 }
 
 .logo-espacio {
-    width: 50px; /* Ancho reservado para simular la posición gráfica del logotipo */
-    height: 50px; /* Alto reservado para simular la posición gráfica del logotipo */
-    background-color: #ffffff; /* Fondo blanco para destacar el bloque del logo */
+    width: 60px; /* Ancho reservado para simular la posición gráfica del logotipo */
+    height: 60px; /* Alto reservado para simular la posición gráfica del logotipo */
     border-radius: 4px; /* Bordes ligeramente redondeados para mejor estética */
     display: flex; /* Permite centrar el texto interno "LOGO" */
     align-items: center; /* Centrado vertical del texto "LOGO" */
@@ -50,7 +49,7 @@ header {
     font-size: 10px; /* Tamaño de fuente pequeño para la etiqueta simulada */
     color: #000; /* Color de texto negro para el letrero simulado */
     font-weight: bold; /* Texto en negrita */
-    overflow: hidden; /* Evita que la imagen se salga del contenedor*/
+    /*overflow: hidden; /* Evita que la imagen se salga del contenedor*/
 }
 .logo-img {
     max-height: 100%; /* Ajusta el alto de la imagen al tamaño de la caja */ 
