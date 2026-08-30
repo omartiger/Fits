@@ -50,6 +50,12 @@ header {
     font-size: 10px; /* Tamaño de fuente pequeño para la etiqueta simulada */
     color: #000; /* Color de texto negro para el letrero simulado */
     font-weight: bold; /* Texto en negrita */
+    overflow: hidden; /* Evita que la imagen se salga del contenedor*/
+}
+.logo-img {
+    max-height: 100%; /* Ajusta el alto de la imagen al tamaño de la caja */ 
+    width: auto; /*Mantiene las proporciones originales para que no se deforme */ 
+    object-fit: contain;
 }
 
 .titulo-sitio {
