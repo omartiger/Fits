@@ -1,11 +1,88 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Servicios</title>
-    </head>
-    <body>
-        <h1>Servicios</h1>
-        <p>Ofrecemos una variedad de servicios para satisfacer sus necesidades.</p>
-    </body>
+<!DOCTYPE html> <!-- Declara el tipo de documento HTML5 -->
+<html lang="es"> <!-- Configura el idioma español -->
+<head>
+    <meta charset="UTF-8"> <!-- Codificación UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajuste responsivo para dispositivos -->
+    <title>FISIC EDUCATION - Servicios</title> <!-- Título identificativo de la pestaña -->
+    <link rel="stylesheet" href="estilos.css"> <!-- Archivo CSS global -->
+</head>
+<body>
+
+    <!-- ================================================================== -->
+    <!-- CABEZOTE ESTÁNDAR DEL SITIO                                        -->
+    <!-- ================================================================== -->
+    <header>
+        <div class="logo-container">
+            <div class="logo-espacio">LOGO</div>
+            <span class="titulo-sitio">FISIC EDUCATION</span>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="has-dropdown">
+                    <a href="nosotros.html">Nosotros ▾</a>
+                    <ul class="submenu">
+                        <li><a href="nosotros.html#mision">Misión</a></li>
+                        <li><a href="nosotros.html#vision">Visión</a></li>
+                        <li><a href="nosotros.html#valores">Valores</a></li>
+                        <li><a href="nosotros.html#equipo">Equipo de Trabajo</a></li>
+                    </ul>
+                </li>
+                <!-- Menú desplegable de servicios con enlaces directos a los 4 servicios numerados -->
+                <li class="has-dropdown">
+                    <a href="servicios.html">Servicios ▾</a>
+                    <ul class="submenu">
+                        <li><a href="#serv1">1. Asesorías</a></li>
+                        <li><a href="#serv2">2. Laboratorios</a></li>
+                        <li><a href="#serv3">3. Talleres</a></li>
+                        <li><a href="#serv4">4. Tutorías</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="redes-sociales">
+            <a href="#">IG</a>
+            <a href="#">YT</a>
+            <a href="#">TK</a>
+        </div>
+    </header>
+
+    <!-- ================================================================== -->
+    <!-- CONTENIDO PRINCIPAL: LISTA NUMERADA DE SERVICIOS                   -->
+    <!-- ================================================================== -->
+    <main>
+        <h2 class="seccion-titulo">Nuestros Servicios</h2> <!-- Título principal de la sección -->
+        
+        <!-- Lista ordenada con los 4 servicios requeridos secuencialmente -->
+        <ol class="lista-servicios">
+            <li id="serv1">
+                <strong>Asesorías de Proyectos Escolares:</strong> Te ayudamos a estructurar ferias de ciencias y experimentos prácticos con bases físicas sólidas y materiales caseros.
+            </li>
+            <li id="serv2">
+                <strong>Laboratorios Virtuales Interactivos:</strong> Simuladores digitales donde podrás experimentar con gravedad, fuerzas y vectores en tiempo real.
+            </li>
+            <li id="serv3">
+                <strong>Talleres de Física Recreativa:</strong> Clases dinámicas enfocadas en deportes, tecnología y fenómenos naturales orientadas a adolescentes.
+            </li>
+            <li id="serv4">
+                <strong>Tutorías Personalizadas:</strong> Refuerzo escolar académico adaptado al ritmo de aprendizaje de cada estudiante entre 11 y 15 años.
+            </li>
+        </ol>
+
+        <!-- Imagen de soporte visual centrada para los servicios -->
+        <div style="margin-top: 3rem; text-align: center;">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop" alt="Servicios de Física" class="imagen-estandar">
+        </div>
+    </main>
+
+    <!-- ================================================================== -->
+    <!-- PIE DE PÁGINA                                                      -->
+    <!-- ================================================================== -->
+    <footer>
+        <p>&copy; 2026 FISIC EDUCATION. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
 </html>

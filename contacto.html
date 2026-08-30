@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento HTML5 -->
+<html lang="es"> <!-- Idioma español configurado -->
+<head>
+    <meta charset="UTF-8"> <!-- Codificación UTF-8 para caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajuste adaptable a pantallas táctiles y de escritorio -->
+    <title>FISIC EDUCATION - Contacto</title> <!-- Título visible en el navegador -->
+    <link rel="stylesheet" href="estilos.css"> <!-- Vinculación con los estilos CSS -->
+</head>
+<body>
+
+    <!-- ================================================================== -->
+    <!-- CABEZOTE GLOBAL INSTITUCIONAL                                     -->
+    <!-- ================================================================== -->
+    <header>
+        <div class="logo-container">
+            <div class="logo-espacio">LOGO</div>
+            <span class="titulo-sitio">FISIC EDUCATION</span>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="has-dropdown">
+                    <a href="nosotros.html">Nosotros ▾</a>
+                    <ul class="submenu">
+                        <li><a href="nosotros.html#mision">Misión</a></li>
+                        <li><a href="nosotros.html#vision">Visión</a></li>
+                        <li><a href="nosotros.html#valores">Valores</a></li>
+                        <li><a href="nosotros.html#equipo">Equipo de Trabajo</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="servicios.html">Servicios ▾</a>
+                    <ul class="submenu">
+                        <li><a href="servicios.html#serv1">1. Asesorías</a></li>
+                        <li><a href="servicios.html#serv2">2. Laboratorios</a></li>
+                        <li><a href="servicios.html#serv3">3. Talleres</a></li>
+                        <li><a href="servicios.html#serv4">4. Tutorías</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="redes-sociales">
+            <a href="#">IG</a>
+            <a href="#">YT</a>
+            <a href="#">TK</a>
+        </div>
+    </header>
+
+    <!-- ================================================================== -->
+    <!-- CONTENIDO PRINCIPAL: FORMULARIO DE CONTACTO INTERACTIVO            -->
+    <!-- ================================================================== -->
+    <main>
+        <h2 class="seccion-titulo">Contáctanos</h2> <!-- Título centrado de la sección -->
+        
+        <!-- Formulario HTML estructurado con campos obligatorios -->
+        <form class="contacto-form" action="#" method="POST">
+            <!-- Campo de entrada para el nombre completo del usuario -->
+            <input type="text" name="nombre" placeholder="Tu Nombre Completo" required>
+            
+            <!-- Campo de entrada para el correo electrónico con validación nativa -->
+            <input type="email" name="correo" placeholder="Tu Correo Electrónico" required>
+            
+            <!-- Área de texto amplia para redactar el mensaje o duda -->
+            <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            
+            <!-- Botón de envío que activa la interacción del formulario -->
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </main>
+
+    <!-- ================================================================== -->
+    <!-- PIE DE PÁGINA                                                      -->
+    <!-- ================================================================== -->
+    <footer>
+        <p>&copy; 2026 FISIC EDUCATION. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

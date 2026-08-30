@@ -1,16 +1,87 @@
-<!DOCTYPE html>
-<html lang="es">
-
+<!DOCTYPE html> <!-- Declara el tipo de documento utilizando el estándar moderno HTML5 -->
+<html lang="es"> <!-- Abre el elemento raíz HTML indicando explícitamente que el idioma principal es el español -->
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>prueba</title>
-	<link rel="stylesheet" type="text/css" href="styles.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
-		integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres UTF-8 para soportar tildes, eñes y caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la escala inicial y el ancho de la ventana gráfica para adaptabilidad móvil -->
+    <title>FISIC EDUCATION - Inicio</title> <!-- Título oficial que aparecerá en la pestaña del navegador web -->
+    <link rel="stylesheet" href="estilos.css"> <!-- Vincula de forma externa la hoja de estilos CSS general del proyecto -->
 </head>
+<body>
 
-<body id="inicio">
-	<p>Hola mundo</p>
+    <!-- ================================================================== -->
+    <!-- CABEZOTE PRINCIPAL DEL SITIO WEB                                   -->
+    <!-- ================================================================== -->
+    <header>
+        <!-- Bloque izquierdo: Espacio para el logotipo y nombre institucional -->
+        <div class="logo-container">
+            <div class="logo-espacio">LOGO</div> <!-- Contenedor gráfico simulado para la ubicación del logo -->
+            <span class="titulo-sitio">FISIC EDUCATION</span> <!-- Nombre de la marca en mayúscula sostenida obligatoria -->
+        </div>
+        
+        <!-- Bloque central: Menú de navegación principal con enlaces y submenús -->
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li> <!-- Enlace directo a la página de inicio -->
+                
+                <!-- Opción con submenú desplegable: Nosotros -->
+                <li class="has-dropdown">
+                    <a href="nosotros.html">Nosotros ▾</a> <!-- Enlace principal con indicador visual de despliegue -->
+                    <ul class="submenu">
+                        <li><a href="nosotros.html#mision">Misión</a></li> <!-- Submenú: Misión -->
+                        <li><a href="nosotros.html#vision">Visión</a></li> <!-- Submenú: Visión -->
+                        <li><a href="nosotros.html#valores">Valores</a></li> <!-- Submenú: Valores -->
+                        <li><a href="nosotros.html#equipo">Equipo de Trabajo</a></li> <!-- Submenú: Equipo de Trabajo -->
+                    </ul>
+                </li>
+                
+                <!-- Opción con submenú desplegable: Servicios con 4 servicios numerados -->
+                <li class="has-dropdown">
+                    <a href="servicios.html">Servicios ▾</a> <!-- Enlace principal con indicador visual de despliegue -->
+                    <ul class="submenu">
+                        <li><a href="servicios.html#serv1">1. Asesorías</a></li> <!-- Submenú servicio 1 -->
+                        <li><a href="servicios.html#serv2">2. Laboratorios</a></li> <!-- Submenú servicio 2 -->
+                        <li><a href="servicios.html#serv3">3. Talleres</a></li> <!-- Submenú servicio 3 -->
+                        <li><a href="servicios.html#serv4">4. Tutorías</a></li> <!-- Submenú servicio 4 -->
+                    </ul>
+                </li>
+                
+                <li><a href="blog.html">Blog</a></li> <!-- Enlace directo a la subpágina del blog -->
+                <li><a href="contacto.html">Contacto</a></li> <!-- Enlace directo a la subpágina de contacto -->
+            </ul>
+        </nav>
+
+        <!-- Bloque derecho: Accesos directos a redes sociales -->
+        <div class="redes-sociales">
+            <a href="#" target="_blank">IG</a> <!-- Link simulado a Instagram -->
+            <a href="#" target="_blank">YT</a> <!-- Link simulado a YouTube -->
+            <a href="#" target="_blank">TK</a> <!-- Link simulado a TikTok -->
+        </div>
+    </header>
+
+    <!-- ================================================================== -->
+    <!-- CONTENIDO PRINCIPAL DE LA PÁGINA DE INICIO                         -->
+    <!-- ================================================================== -->
+    <main>
+        <div class="contenido-centrado">
+            <!-- Título principal llamativo orientado a jóvenes -->
+            <h1 class="seccion-titulo">¡La Física Mueve tu Mundo!</h1>
+            
+            <!-- Imagen centrada referente a la física y adaptada a la temática juvenil -->
+            <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?q=80&w=600&auto=format&fit=crop" alt="Física en la vida diaria" class="imagen-estandar">
+            
+            <!-- Texto corto con enfoque práctico para adolescentes entre 11 y 15 años -->
+            <p class="texto-informativo">
+                ¿Alguna vez te has preguntado por qué puedes encestar perfecto en baloncesto, cómo funciona la patineta o por qué tu videojuego favorito responde con tanta precisión a los saltos? Todo eso es física pura. Aprender física entre los 11 y 15 años no se trata de memorizar fórmulas aburridas, sino de entender los superpoderes que rigen tu entorno cotidiano para aplicarlos de forma divertida y práctica en tu día a día.
+            </p>
+        </div>
+    </main>
+
+    <!-- ================================================================== -->
+    <!-- PIE DE PÁGINA (FOOTER) CON EL AÑO DINÁMICO/ESTÁTICO                   -->
+    <!-- ================================================================== -->
+    <footer>
+        <p>&copy; 2026 FISIC EDUCATION. Todos los derechos reservados.</p> <!-- Muestra el año del proyecto -->
+    </footer>
+
 </body>
+</html>

@@ -1,0 +1,278 @@
+/* ========================================================================== */
+/* RESET GLOBAL Y CONFIGURACIÓN BASE                                         */
+/* ========================================================================== */
+* {
+    margin: 0; /* Elimina los márgenes predeterminados de todos los elementos del navegador */
+    padding: 0; /* Elimina los rellenos predeterminados */
+    box-sizing: border-box; /* Incluye el padding y el borde dentro del ancho y alto total calculados */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define la tipografía base del sistema */
+}
+
+body {
+    background-color: #ffffff; /* Establece el fondo blanco requerido para el cuerpo de la página */
+    color: #333333; /* Define un color de texto oscuro estándar para asegurar contraste y lectura */
+    display: flex; /* Activa el modelo de caja flexible (Flexbox) para el cuerpo */
+    flex-direction: column; /* Organiza los elementos hijos del body de forma vertical (Cabecera, Main, Footer) */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe como mínimo el 100% de la altura de la ventana visual */
+}
+
+/* ========================================================================== */
+/* DISEÑO DEL CABEZOTE (Altura de 2.5 cm / 94px aprox)                      */
+/* ========================================================================== */
+header {
+    background-color: #000000; /* Fondo negro obligatorio para el cabezote */
+    height: 94px; /* Altura equivalente a 2.5 cm para cumplir con la especificación física */
+    width: 100%; /* Ocupa todo el ancho horizontal disponible de la pantalla */
+    display: flex; /* Distribuye horizontalmente los elementos internos del header */
+    align-items: center; /* Alinea verticalmente al centro los elementos dentro del header */
+    justify-content: space-between; /* Separa los elementos en tres bloques: izquierda (logo), centro (menú), derecha (redes) */
+    padding: 0 2rem; /* Espaciado interno horizontal de 2rem a los costados */
+    position: sticky; /* Fija el cabezote en la parte superior al hacer scroll */
+    top: 0; /* Posición superior fija en 0px */
+    z-index: 1000; /* Asegura que el cabezote esté siempre por encima de cualquier otro elemento visual */
+}
+
+/* Contenedor del Logo y el Nombre */
+.logo-container {
+    display: flex; /* Agrupa el espacio del logo y el texto en línea horizontal */
+    align-items: center; /* Centra verticalmente el logo y el texto */
+    gap: 1rem; /* Espacio de separación entre el contenedor del logo y el título */
+}
+
+.logo-espacio {
+    width: 50px; /* Ancho reservado para simular la posición gráfica del logotipo */
+    height: 50px; /* Alto reservado para simular la posición gráfica del logotipo */
+    background-color: #ffffff; /* Fondo blanco para destacar el bloque del logo */
+    border-radius: 4px; /* Bordes ligeramente redondeados para mejor estética */
+    display: flex; /* Permite centrar el texto interno "LOGO" */
+    align-items: center; /* Centrado vertical del texto "LOGO" */
+    justify-content: center; /* Centrado horizontal del texto "LOGO" */
+    font-size: 10px; /* Tamaño de fuente pequeño para la etiqueta simulada */
+    color: #000; /* Color de texto negro para el letrero simulado */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.titulo-sitio {
+    color: #ffffff; /* Texto del nombre en color blanco para destacar sobre el fondo negro */
+    font-size: 1.2rem; /* Tamaño de letra adaptativo mediano */
+    font-weight: 700; /* Grosor de fuente en negrita fuerte */
+    letter-spacing: 1px; /* Espaciado ligeramente amplio entre las letras para mayúsculas sostenidas */
+}
+
+/* ========================================================================== */
+/* MENÚ DE NAVEGACIÓN Y SUBMENÚS DESPLEGABLES                                */
+/* ========================================================================== */
+.nav-menu {
+    display: flex; /* Organiza los elementos del menú principal en fila horizontal */
+    list-style: none; /* Elimina los puntos o viñetas predeterminados de la lista */
+    gap: 1.5rem; /* Distancia de separación horizontal entre cada opción del menú */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+}
+
+.nav-menu > li {
+    position: relative; /* Posicionamiento relativo esencial para que el submenú absoluto se ubique respecto a su elemento padre */
+}
+
+.nav-menu a {
+    color: #ffffff; /* Color blanco para los enlaces del menú principal sobre fondo negro */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los hipervínculos */
+    font-size: 0.95rem; /* Tamaño de fuente equilibrado */
+    padding: 10px 0; /* Espaciado vertical para facilitar el área de clic del usuario */
+    transition: color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+.nav-menu a:hover {
+    color: #00bcd4; /* Cambia a un tono cian moderno cuando el cursor pasa por encima */
+}
+
+/* Estilos de los Submenús Desplegables */
+.submenu {
+    display: none; /* Oculta por defecto el submenú hasta que ocurra un evento hover */
+    position: absolute; /* Posicionamiento absoluto respecto al elemento <li> padre */
+    top: 100%; /* Coloca el submenú justo debajo de la opción principal del menú */
+    left: 0; /* Alinea el borde izquierdo con el elemento principal */
+    background-color: #1a1a1a; /* Fondo gris oscuro para diferenciar el submenú */
+    list-style: none; /* Elimina viñetas de la lista interna */
+    min-width: 180px; /* Ancho mínimo garantizado para que los textos no se corten */
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.3); /* Sombra difuminada para dar profundidad flotante */
+    border-radius: 4px; /* Esquinas redondeadas */
+    overflow: hidden; /* Oculta elementos que desborden los bordes redondeados */
+}
+
+.submenu li {
+    width: 100%; /* Hace que cada opción del submenú ocupe todo el ancho disponible */
+}
+
+.submenu li a {
+    display: block; /* Convierte el enlace en un bloque interactivo completo */
+    padding: 10px 15px; /* Relleno interno generoso para facilitar la selección táctil o con cursor */
+    font-size: 0.9rem; /* Tamaño de letra ligeramente menor que el menú principal */
+    color: #ffffff; /* Color de texto blanco inicial */
+}
+
+.submenu li a:hover {
+    background-color: #333333; /* Fondo más claro al pasar el cursor sobre la opción del submenú */
+    color: #00bcd4; /* Cambia el color del texto al tono cian institucional */
+}
+
+/* Activación del menú desplegable al pasar el mouse por encima */
+.nav-menu li.has-dropdown:hover .submenu {
+    display: block; /* Cambia el estado de oculto a visible al detectar hover */
+}
+
+/* ========================================================================== */
+/* SECCIÓN DE REDES SOCIALES EN EL CABEZOTE                                 */
+/* ========================================================================== */
+.redes-sociales {
+    display: flex; /* Organiza los accesos a redes sociales en fila horizontal */
+    gap: 1rem; /* Espacio de separación entre cada icono o enlace de red social */
+}
+
+.redes-sociales a {
+    color: #ffffff; /* Color blanco para el texto o icono de la red social */
+    font-size: 0.9rem; /* Tamaño de fuente compacto */
+    text-decoration: none; /* Sin subrayado de hipervínculo */
+    border: 1px solid #ffffff; /* Borde sutil blanco alrededor de cada botón de red social */
+    padding: 4px 8px; /* Relleno interno para simular la forma de un botón */
+    border-radius: 4px; /* Esquinas ligeramente redondeadas */
+    transition: all 0.3s ease; /* Transición suave general para efectos hover */
+}
+
+.redes-sociales a:hover {
+    background-color: #ffffff; /* Invierte el color de fondo a blanco al pasar el cursor */
+    color: #000000; /* Invierte el color del texto a negro para contraste */
+}
+
+/* ========================================================================== */
+/* CONTENIDO PRINCIPAL Y SECCIONES GLOBALES                                   */
+/* ========================================================================== */
+main {
+    flex: 1; /* Permite que el área principal crezca y ocupe el espacio disponible entre cabecera y footer */
+    padding: 3rem 2rem; /* Espaciado interno superior/inferior y lateral */
+    max-width: 1200px; /* Ancho máximo estandarizado para evitar estiramientos excesivos en pantallas grandes */
+    margin: 0 auto; /* Centra automáticamente el contenedor principal en la pantalla */
+    width: 100%; /* Asegura adaptabilidad fluida al ancho disponible */
+}
+
+.seccion-titulo {
+    text-align: center; /* Centra horizontalmente los títulos de las secciones */
+    font-size: 2rem; /* Tamaño de fuente destacado para títulos principales */
+    margin-bottom: 2rem; /* Margen inferior de separación con el contenido subsiguiente */
+    color: #111; /* Color de texto negro casi puro para máxima legibilidad */
+}
+
+.contenido-centrado {
+    display: flex; /* Activa Flexbox para alinear elementos internos verticalmente */
+    flex-direction: column; /* Organiza los elementos internos en columna */
+    align-items: center; /* Centra horizontalmente los elementos hijos */
+    text-align: center; /* Centra los bloques de texto alineado al centro */
+    gap: 2rem; /* Espacio uniforme entre los elementos internos (imagen, texto, etc.) */
+}
+
+.imagen-estandar {
+    max-width: 100%; /* Impide que la imagen rebase el ancho de su contenedor en pantallas pequeñas */
+    width: 500px; /* Ancho base controlado para la imagen ilustrativa */
+    height: auto; /* Mantiene la proporción original de aspecto de la imagen */
+    border-radius: 8px; /* Bordes redondeados estéticos */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Sombra suave para dar relieve elegante a la imagen */
+}
+
+.texto-informativo {
+    max-width: 800px; /* Limita el ancho de lectura para una experiencia visual cómoda (evita líneas muy largas) */
+    font-size: 1.1rem; /* Tamaño de fuente ligeramente superior para facilitar la lectura */
+    line-height: 1.6; /* Altura de línea espaciada para mejorar la legibilidad en textos largos */
+    color: #444; /* Gris oscuro suave para evitar el contraste agresivo del negro puro */
+}
+
+/* Listas Numeradas Específicas para Servicios */
+.lista-servicios {
+    list-style-type: decimal; /* Asegura el uso de números secuenciales (1, 2, 3, 4) */
+    text-align: left; /* Alinea el texto de los servicios a la izquierda para una lectura ordenada */
+    max-width: 800px; /* Ancho máximo limitado para mantener simetría visual */
+    margin: 0 auto; /* Centra la lista en el contenedor principal */
+    font-size: 1.1rem; /* Tamaño de fuente coherente con el sitio */
+    line-height: 1.8; /* Espaciado generoso entre líneas de la lista */
+}
+
+.lista-servicios li {
+    margin-bottom: 1rem; /* Espacio de separación vertical entre cada ítem de servicio */
+    padding-left: 0.5rem; /* Pequeño desplazamiento interior para separación de viñetas numéricas */
+}
+
+/* ========================================================================== */
+/* FORMULARIO DE CONTACTO                                                     */
+/* ========================================================================== */
+.contacto-form {
+    display: flex; /* Utiliza Flexbox para ordenar verticalmente los campos del formulario */
+    flex-direction: column; /* Disposición en columna de los inputs y el botón */
+    gap: 1.2rem; /* Espacio uniforme entre cada campo de entrada de datos */
+    max-width: 600px; /* Limita el ancho máximo del formulario para evitar que se extienda demasiado */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    width: 100%; /* Ocupa el 100% del contenedor disponible de forma responsiva */
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    padding: 12px; /* Relleno interno cómodo para escribir dentro de los inputs */
+    border: 1px solid #ccc; /* Borde gris claro estándar */
+    border-radius: 4px; /* Bordes ligeramente redondeados en los campos de texto */
+    font-size: 1rem; /* Tamaño de fuente estándar legible */
+    width: 100%; /* Ancho completo adaptado al contenedor del formulario */
+}
+
+.contacto-form button {
+    background-color: #000000; /* Fondo negro elegante para el botón de envío */
+    color: #ffffff; /* Texto blanco de alto contraste sobre el botón negro */
+    padding: 12px; /* Relleno interno superior/inferior para darle grosor al botón */
+    border: none; /* Elimina los bordes predeterminados del sistema operativo */
+    border-radius: 4px; /* Bordes redondeados consistentes con los inputs */
+    font-size: 1rem; /* Tamaño de texto estándar */
+    cursor: pointer; /* Cambia el cursor a una mano interactiva al pasar por encima */
+    transition: background 0.3s ease; /* Transición suave de color al hacer hover */
+}
+
+.contacto-form button:hover {
+    background-color: #333333; /* Aclara ligeramente el color negro del botón al pasar el cursor */
+}
+
+/* ========================================================================== */
+/* PIE DE PÁGINA (FOOTER)                                                     */
+/* ========================================================================== */
+footer {
+    background-color: #111111; /* Fondo gris casi negro para distinguir el pie de página */
+    color: #ffffff; /* Texto en color blanco para contraste */
+    text-align: center; /* Centra horizontalmente el texto del copyright y el año */
+    padding: 1.5rem; /* Relleno interno superior/inferior y lateral generoso */
+    font-size: 0.9rem; /* Tamaño de letra compacto para el pie de página */
+    margin-top: auto; /* Empuja siempre el footer hacia el fondo inferior absoluto de la pantalla */
+}
+
+/* ========================================================================== */
+/* DISEÑO RESPONSIVO (MEDIA QUERY PARA DISPOSITIVOS MÓVILES Y TABLETS)        */
+/* ========================================================================== */
+@media (max-width: 900px) {
+    header {
+        height: auto; /* Permite que la altura del cabezote se adapte dinámicamente en pantallas pequeñas */
+        flex-direction: column; /* Cambia la distribución horizontal del header a columna vertical */
+        padding: 1rem; /* Reduce el padding lateral para aprovechar mejor el espacio móvil */
+        gap: 1rem; /* Espaciado uniforme entre los bloques reorganizados verticalmente */
+        position: relative; /* Cambia de sticky a relativo para evitar bloqueos visuales en pantallas pequeñas */
+    }
+
+    .nav-menu {
+        flex-direction: column; /* Coloca los elementos del menú en lista vertical desplegada */
+        gap: 0.5rem; /* Reduce el espacio vertical entre opciones del menú */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        text-align: center; /* Centra los textos del menú */
+    }
+
+    .submenu {
+        position: relative; /* Elimina el posicionamiento absoluto para que fluya de manera natural en móviles */
+        box-shadow: none; /* Elimina la sombra flotante en vista móvil */
+        background-color: #222; /* Ajusta el tono de fondo del submenú móvil */
+    }
+
+    .redes-sociales {
+        margin-top: 0.5rem; /* Añade un pequeño margen superior de separación */
+    }
+}

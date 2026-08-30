@@ -1,11 +1,110 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nosotros</title>
-    </head>
-    <body>
-        <h1>Nosotros</h1>
-        <p>Bienvenidos a nuestra página. Somos una empresa dedicada a ofrecer los mejores servicios.</p>
-    </body>
+<!DOCTYPE html> <!-- Declara el tipo de documento HTML5 -->
+<html lang="es"> <!-- Elemento raíz indicando idioma español -->
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Diseño responsivo para pantallas móviles -->
+    <title>FISIC EDUCATION - Nosotros</title> <!-- Título específico de la pestaña -->
+    <link rel="stylesheet" href="estilos.css"> <!-- Vinculación a la hoja de estilos global -->
+</head>
+<body>
+
+    <!-- ================================================================== -->
+    <!-- CABEZOTE REUTILIZADO CON EL MISMO DISEÑO Y MENÚ DESPLEGABLE        -->
+    <!-- ================================================================== -->
+    <header>
+        <!-- Contenedor izquierdo: Logo y nombre institucional -->
+        <div class="logo-container">
+            <div class="logo-espacio">LOGO</div>
+            <span class="titulo-sitio">FISIC EDUCATION</span>
+        </div>
+        
+        <!-- Menú de navegación principal -->
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                
+                <!-- Menú desplegable "Nosotros" con anclajes internos a las secciones de esta página -->
+                <li class="has-dropdown">
+                    <a href="nosotros.html">Nosotros ▾</a>
+                    <ul class="submenu">
+                        <li><a href="#mision">Misión</a></li>
+                        <li><a href="#vision">Visión</a></li>
+                        <li><a href="#valores">Valores</a></li>
+                        <li><a href="#equipo">Equipo de Trabajo</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Menú desplegable "Servicios" -->
+                <li class="has-dropdown">
+                    <a href="servicios.html">Servicios ▾</a>
+                    <ul class="submenu">
+                        <li><a href="servicios.html#serv1">1. Asesorías</a></li>
+                        <li><a href="servicios.html#serv2">2. Laboratorios</a></li>
+                        <li><a href="servicios.html#serv3">3. Talleres</a></li>
+                        <li><a href="servicios.html#serv4">4. Tutorías</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Redes sociales en el cabezote -->
+        <div class="redes-sociales">
+            <a href="#">IG</a>
+            <a href="#">YT</a>
+            <a href="#">TK</a>
+        </div>
+    </header>
+
+    <!-- ================================================================== -->
+    <!-- CONTENIDO PRINCIPAL: SECCIONES DE NOSOTROS                         -->
+    <!-- ================================================================== -->
+    <main>
+        <!-- SECCIÓN 1: MISIÓN -->
+        <section id="mision" style="margin-bottom: 4rem;">
+            <h2 class="seccion-titulo">Misión</h2> <!-- Título centrado -->
+            <div class="contenido-centrado">
+                <p class="texto-informativo">Acercar la ciencia y la física a los jóvenes de manera dinámica, rompiendo los esquemas tradicionales de la educación rígida y transformándola en una herramienta de exploración práctica para su vida diaria.</p>
+                <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=600&auto=format&fit=crop" alt="Misión" class="imagen-estandar"> <!-- Imagen que refuerza el tema -->
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: VISIÓN -->
+        <section id="vision" style="margin-bottom: 4rem;">
+            <h2 class="seccion-titulo">Visión</h2> <!-- Título centrado -->
+            <div class="contenido-centrado">
+                <p class="texto-informativo">Ser la plataforma líder en educación científica juvenil en Hispanoamérica, inspirando a la próxima generación de pensadores, ingenieros y creadores a través de la comprensión intuitiva del universo.</p>
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop" alt="Visión" class="imagen-estandar"> <!-- Imagen que refuerza el tema -->
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: VALORES -->
+        <section id="valores" style="margin-bottom: 4rem;">
+            <h2 class="seccion-titulo">Valores</h2> <!-- Título centrado -->
+            <div class="contenido-centrado">
+                <p class="texto-informativo">Fomentamos la curiosidad innata, la innovación constante, el trabajo en equipo colaborativo y la accesibilidad del conocimiento para derribar cualquier barrera de aprendizaje.</p>
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600&auto=format&fit=crop" alt="Valores" class="imagen-estandar"> <!-- Imagen que refuerza el tema -->
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: EQUIPO DE TRABAJO -->
+        <section id="equipo">
+            <h2 class="seccion-titulo">Equipo de Trabajo</h2> <!-- Título centrado -->
+            <div class="contenido-centrado">
+                <p class="texto-informativo">Un grupo multidisciplinario de físicos, educadores y tecnólogos apasionados por transformar la forma en que los adolescentes interactúan con el conocimiento científico.</p>
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=600&auto=format&fit=crop" alt="Equipo" class="imagen-estandar"> <!-- Imagen que refuerza el tema -->
+            </div>
+        </section>
+    </main>
+
+    <!-- ================================================================== -->
+    <!-- PIE DE PÁGINA (FOOTER)                                             -->
+    <!-- ================================================================== -->
+    <footer>
+        <p>&copy; 2026 FISIC EDUCATION. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
 </html>
