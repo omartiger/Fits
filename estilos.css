@@ -20,7 +20,7 @@ body {
 /* DISEÑO DEL CABEZOTE (Altura de 2.5 cm / 94px aprox)                      */
 /* ========================================================================== */
 header {
-    background-color: #000000; /* Fondo negro obligatorio para el cabezote */
+    background-color: #00BF63; /* Fondo negro obligatorio para el cabezote */
     height: 94px; /* Altura equivalente a 2.5 cm para cumplir con la especificación física */
     width: 100%; /* Ocupa todo el ancho horizontal disponible de la pantalla */
     display: flex; /* Distribuye horizontalmente los elementos internos del header */
