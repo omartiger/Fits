@@ -418,3 +418,28 @@ footer {
     padding: 20px;
     margin: 0;
 }
+
+/* --- COMPLEMENTOS ADICIONALES PARA LA CUARTA TARJETA PERSONAL --- */
+
+/* Línea superior con color personalizado para tu marca personal */
+.podcast-card-personal {
+    border-top: 4px solid #6200ee;
+}
+
+/* Color de fondo y texto para tu etiqueta */
+.badge-personal {
+    background: #f3e5f5;
+    color: #6200ee;
+}
+
+/* Estilo para el botón de tu podcast */
+.personal-link {
+    color: #6200ee;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.personal-link:hover {
+    text-decoration: underline;
+}
