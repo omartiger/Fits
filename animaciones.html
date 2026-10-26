@@ -1,0 +1,107 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento HTML5 -->
+<html lang="es"> <!-- Elemento raíz indicando idioma español -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Diseño responsivo para pantallas móviles -->
+    <title>FISIC EDUCATION - Nosotros</title> <!-- Título específico de la pestaña -->
+    <link rel="stylesheet" href="estilos.css"> <!-- Vinculación a la hoja de estilos global -->
+</head>
+
+<body>
+
+    <!-- ================================================================== -->
+    <!-- CABEZOTE REUTILIZADO CON EL MISMO DISEÑO Y MENÚ DESPLEGABLE        -->
+    <!-- ================================================================== -->
+    <header>
+        <!-- Bloque izquierdo: Espacio para el logotipo y nombre institucional -->
+        <div class="logo-container">
+            <div class="logo-espacio">
+                <img src="imagen/logo.jpg" alt="Logotipo de FISIC EDUCATION" class="logo-img">
+                <!-- Imagen de logotipo simulada con un placeholder -->
+            </div> <!-- Contenedor gráfico simulado para la ubicación del logo -->
+            <span class="titulo-sitio">FISIC EDUCATION</span> <!-- Nombre de la marca en mayúscula sostenida obligatoria -->
+        </div>
+    
+        <!-- Bloque central: Menú de navegación principal con enlaces y submenús -->
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li> <!-- Enlace directo a la página de inicio -->
+    
+                <!-- Opción con submenú desplegable: Nosotros -->
+                <li class="has-dropdown">
+                    <a href="nosotros.html">Nosotros ▾</a> <!-- Enlace principal con indicador visual de despliegue -->
+                    <ul class="submenu">
+                        <li><a href="nosotros.html#mision">Misión</a></li> <!-- Submenú: Misión -->
+                        <li><a href="nosotros.html#vision">Visión</a></li> <!-- Submenú: Visión -->
+                        <li><a href="nosotros.html#valores">Valores</a></li> <!-- Submenú: Valores -->
+                        <li><a href="nosotros.html#equipo">Equipo de Trabajo</a></li> <!-- Submenú: Equipo de Trabajo -->
+                    </ul>
+                </li>
+    
+                <!-- Opción con submenú desplegable: Servicios con 4 servicios numerados -->
+                <li class="has-dropdown">
+                    <a href="servicios.html">Servicios ▾</a> <!-- Enlace principal con indicador visual de despliegue -->
+                    <ul class="submenu">
+                        <li><a href="servicios.html#serv1">1. Asesorías</a></li> <!-- Submenú servicio 1 -->
+                        <li><a href="servicios.html#serv2">2. Laboratorios</a></li> <!-- Submenú servicio 2 -->
+                        <li><a href="servicios.html#serv3">3. Talleres</a></li> <!-- Submenú servicio 3 -->
+                        <li><a href="servicios.html#serv4">4. Tutorías</a></li> <!-- Submenú servicio 4 -->
+                    </ul>
+                </li>
+    
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="glosario.html">Glosario</a></li>
+                <li><a href="animaciones.html">Animaciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Redes sociales en el cabezote (Configuradas para pestañas nuevas) -->
+        <div class="redes-sociales">
+            <a href="https://instagram.com" target="_blank">IG</a>
+            <a href="https://youtube.com" target="_blank">YT</a>
+            <a href="https://tiktok.com" target="_blank">TK</a>
+        </div>
+    </header>
+
+
+    <!-- ================================================================== -->
+    <!-- CONTENIDO PRINCIPAL: GLOSARIO                        -->
+    <!-- ================================================================== -->
+    <main class="animaciones-container">
+    <h1 class="animaciones-title">Simulaciones y Animaciones Físicas</h1>
+    <p class="animaciones-subtitle">Interactúa y experimenta con laboratorios virtuales para visualizar las leyes de la ciencia en tiempo real.</p>
+
+    <div class="animaciones-grid">
+        <!-- Simulación 1: Leyes de Movimiento (Newton) -->
+        <div class="animacion-card">
+            <h3 class="animacion-card-title">Fuerzas y Movimiento</h3>
+            <p class="animacion-card-desc">Simulador interactivo oficial para experimentar con la aceleración, fricción y fuerzas aplicadas.</p>
+            <div class="iframe-container">
+                <iframe src="https://colorado.edu" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <!-- Simulación 2: Estados de la Materia -->
+        <div class="animacion-card">
+            <h3 class="animacion-card-title">Estados de la Materia y Átomos</h3>
+            <p class="animacion-card-desc">Visualiza cómo interactúan los átomos y las moléculas bajo diferentes condiciones de temperatura y presión.</p>
+            <div class="iframe-container">
+                <iframe src="https://colorado.edu" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <!-- ================================================================== -->
+    <!-- PIE DE PÁGINA (FOOTER)                                             -->
+    <!-- ================================================================== -->
+    <footer>
+        <p>&copy; 2026 FISIC EDUCATION. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
