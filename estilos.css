@@ -281,3 +281,140 @@ footer {
         margin-top: 0.5rem; /* Añade un pequeño margen superior de separación */
     }
 }
+/* ========================================================================== */
+/* PAGINA DEL BLOG                                                     */
+/* ========================================================================== */
+
+.blog-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: sans-serif;
+}
+
+.blog-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.section-heading {
+    color: #2e7d32; /* El color verde de tu barra de navegación */
+    border-bottom: 2px solid #2e7d32;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+/* Rejilla adaptativa para los artículos */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.article-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-3px);
+}
+
+.article-content {
+    padding: 20px;
+}
+
+/* Etiquetas de categoría */
+.badge {
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.badge-basics {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.badge-news {
+    background: #e3f2fd;
+    color: #1565c0;
+}
+
+.article-title {
+    margin: 5px 0 10px 0;
+    color: #111;
+    font-size: 18px;
+}
+
+.article-excerpt {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.article-link {
+    color: #2e7d32;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.article-link:hover {
+    text-decoration: underline;
+}
+
+/* Sección de Podcasts */
+.podcast-intro {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.podcasts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.podcast-wrapper {
+    padding: 10px;
+    border-radius: 12px;
+    min-height: 232px;
+    box-sizing: border-box;
+}
+
+.spotify-theme {
+    background: #111;
+}
+
+.placeholder-theme {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder-text {
+    color: #999;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
