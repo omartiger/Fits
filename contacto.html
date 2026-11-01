@@ -67,25 +67,74 @@
     <!-- ================================================================== -->
     <!-- CONTENIDO PRINCIPAL: FORMULARIO DE CONTACTO INTERACTIVO            -->
     <!-- ================================================================== -->
-    <main>
-        <h2 class="seccion-titulo">Contáctanos</h2> <!-- Título centrado de la sección -->
-        
-        <!-- Formulario HTML estructurado con campos obligatorios -->
-        <form class="contacto-form" action="https://formsubmit.co/ninonicolas016067@tecnologicodelsur.edu.co" method="POST">
-            <!-- Campo de entrada para el nombre completo del usuario -->
-            <input type="text" name="nombre" placeholder="Tu Nombre Completo" required>
-            
-            <!-- Campo de entrada para el correo electrónico con validación nativa -->
-            <input type="email" name="correo" placeholder="Tu Correo Electrónico" required>
-            
-            <!-- Área de texto amplia para redactar el mensaje o duda -->
-            <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
-            
-            <!-- Botón de envío que activa la interacción del formulario -->
-            <button type="submit">Enviar Mensaje</button>
-        </form>
-    </main>
+    <main class="contacto-main">
+    <section class="contacto-section">
+        <div class="contacto-container">
+            <h2 class="contacto-title">Contáctanos</h2>
+            <p class="contacto-subtitle">¿Tienes alguna pregunta o sugerencia? Ponte en contacto con nosotros, estaremos encantados de atenderte.</p>
 
+            <div class="contacto-grid">
+                <!-- Tarjeta con la Información de Contacto -->
+                <div class="contacto-info-card">
+                    <h3>Información de Contacto</h3>
+                    <p class="info-desc">Puedes escribirnos o visitarnos a través de los siguientes canales:</p>
+
+                    <div class="info-items">
+                        <!-- Teléfono -->
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <div class="info-details">
+                                <span>Teléfono</span>
+                                <a href="tel:+573126043379">+57 312 604 3379</a>
+                            </div>
+                        </div>
+
+                        <!-- Dirección -->
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div class="info-details">
+                                <span>Dirección</span>
+                                <p>Carrera 29 # 52 a 04 , Bogotá, Colombia</p>
+                            </div>
+                        </div>
+
+                        <!-- Correo Electrónico -->
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="info-details">
+                                <span>Correo Electrónico</span>
+                                <a href="mailto:ninonicolas016067@tecnologicodelsur.edu.co">ninonicolas016067@tecnologicodelsur.edu.co</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario de Contacto (Mantiene tus campos y acción de envío) -->
+                <form class="contacto-form" action="https://formsubmit.co/ninonicolas016067@tecnologicodelsur.edu.co" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="nombre" placeholder="Tu Nombre Completo" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" name="correo" placeholder="Tu Correo Electrónico" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
     <!-- ================================================================== -->
     <!-- PIE DE PÁGINA                                                      -->
     <!-- ================================================================== -->
